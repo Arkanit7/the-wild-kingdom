@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-icon-arrow-dims { width: 54px; height: 26px; }
+ .svg-icon-clock-dims { width: 16px; height: 16px; }
+ .svg-icon-close-dims { width: 16px; height: 16px; }
+ .svg-icon-instagram-dims { width: 24px; height: 24px; }
+ .svg-icon-medium-dims { width: 24px; height: 24px; }
+ .svg-icon-pin-dims { width: 12px; height: 16px; }
+ .svg-icon-play-dims { width: 45px; height: 50px; }
+ .svg-icon-quote-dims { width: 40px; height: 32px; }
+ .svg-icon-star-dims { width: 28px; height: 29px; }
+ .svg-icon-tiktok-dims { width: 24px; height: 24px; }
+ .svg-icon-twitter-dims { width: 24px; height: 24px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </meta></head>
+    <body>
+
+<!--
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+    https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+-->
+
+<svg width="0" height="0">
+     <symbol viewBox="0 0 54 26" id="icon-arrow" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M54 12.717v.566C48.901 16.109 44.613 20.389 43.04 26c-.001.004-.361-.231-.38-.238-.02-.007.02.004.022 0 1.192-4.293 5.71-9.384 9.016-12.48-16.162.4-35.55-.201-51.698.283v-1.13l51.698.282C48.392 9.622 43.974 4.34 42.772 0h.555C44.887 5.622 48.21 9.043 54 12.717Z"/></symbol>
+     <symbol viewBox="0 0 16 16" id="icon-clock" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5Z"/></symbol>
+     <symbol class="cbi cbi-x" viewBox="0 0 16 16" id="icon-close" xmlns="http://www.w3.org/2000/svg"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></symbol>
+     <symbol viewBox="0 0 24 24" id="icon-instagram" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#da)"><path d="M12 2.16c3.206 0 3.586.015 4.847.071 1.172.052 1.805.249 2.226.413a3.71 3.71 0 0 1 1.379.895c.421.422.68.82.895 1.378.164.422.36 1.06.412 2.227.057 1.265.07 1.645.07 4.847 0 3.206-.013 3.586-.07 4.846-.051 1.172-.248 1.805-.412 2.227-.216.558-.478.961-.895 1.378a3.69 3.69 0 0 1-1.379.895c-.421.165-1.059.361-2.226.413-1.266.056-1.645.07-4.847.07-3.206 0-3.586-.014-4.847-.07-1.172-.052-1.805-.248-2.226-.413a3.71 3.71 0 0 1-1.379-.895 3.691 3.691 0 0 1-.895-1.378c-.164-.422-.36-1.06-.412-2.227-.057-1.265-.07-1.645-.07-4.846 0-3.207.013-3.586.07-4.847.051-1.172.248-1.805.412-2.227.216-.558.478-.96.895-1.378.422-.422.82-.68 1.379-.895.421-.164 1.059-.361 2.226-.413 1.261-.056 1.64-.07 4.847-.07ZM12 0C8.742 0 8.334.014 7.055.07 5.78.127 4.903.333 4.144.628a5.857 5.857 0 0 0-2.128 1.388A5.88 5.88 0 0 0 .628 4.139C.333 4.903.127 5.775.07 7.05.014 8.334 0 8.742 0 12s.014 3.666.07 4.945c.057 1.275.263 2.152.558 2.911.31.792.717 1.463 1.388 2.128a5.866 5.866 0 0 0 2.123 1.383c.764.296 1.636.502 2.911.558 1.28.056 1.688.07 4.945.07 3.258 0 3.666-.014 4.946-.07 1.275-.056 2.151-.262 2.91-.558a5.866 5.866 0 0 0 2.124-1.383 5.866 5.866 0 0 0 1.383-2.123c.295-.764.501-1.636.558-2.911.056-1.28.07-1.688.07-4.945 0-3.258-.014-3.666-.07-4.946-.057-1.275-.263-2.151-.558-2.91a5.62 5.62 0 0 0-1.374-2.133A5.866 5.866 0 0 0 19.861.633C19.097.338 18.225.13 16.95.075 15.666.015 15.258 0 12 0Z"/><path d="M12 5.836A6.166 6.166 0 0 0 5.836 12 6.166 6.166 0 0 0 12 18.164 6.166 6.166 0 0 0 18.164 12 6.166 6.166 0 0 0 12 5.836Zm0 10.162A3.999 3.999 0 1 1 12.001 8 3.999 3.999 0 0 1 12 15.998ZM19.847 5.592a1.44 1.44 0 1 1-2.879 0 1.44 1.44 0 0 1 2.879 0Z"/></g><defs><clipPath id="da"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol>
+     <symbol viewBox="0 0 24 24" id="icon-medium" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ea)"><path d="M13.537 11.828c0 3.77-3.03 6.827-6.768 6.827S0 15.598 0 11.828 3.03 5 6.769 5c3.738 0 6.768 3.057 6.768 6.828ZM20.963 11.828c0 3.549-1.515 6.427-3.385 6.427-1.869 0-3.384-2.878-3.384-6.427 0-3.55 1.515-6.428 3.384-6.428 1.87 0 3.385 2.877 3.385 6.428M24 11.828c0 3.179-.533 5.758-1.19 5.758-.657 0-1.19-2.578-1.19-5.758s.533-5.759 1.19-5.759c.657 0 1.19 2.578 1.19 5.759Z"/></g><defs><clipPath id="ea"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol>
+     <symbol viewBox="0 0 12 16" id="icon-pin" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 16s6-5.686 6-10A6 6 0 1 0 0 6c0 4.314 6 10 6 10Zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></symbol>
+     <symbol viewBox="0 0 45 50" id="icon-play" xmlns="http://www.w3.org/2000/svg"><path d="M42.32 28.632 7.57 48.472C4.618 50.156.836 48.119.836 44.73V5.05c0-3.389 3.782-5.426 6.732-3.742l34.752 19.84a4.278 4.278 0 0 1 0 7.484Z"/></symbol>
+     <symbol viewBox="0 0 40 32" id="icon-quote" xmlns="http://www.w3.org/2000/svg"><path d="M2.938 30.159c2.294 2.455 6.177 2.455 8.647 0 2.295-2.455 2.295-6.137-.176-8.416-1.235-1.228-2.647-1.579-4.06-1.93C4.527 19.289.29 9.47 13.88.527L13.528 0C6.29 3.682 4.702 7.189 2.76 10.345c-3.883 7.19-3.53 16.307.177 19.814Zm26.12 0c2.294 2.455 6.177 2.455 8.648 0C40 27.704 40 24.022 37.529 21.743c-1.235-1.228-2.647-1.579-4.059-1.93C30.646 19.289 26.41 9.47 40 .527L39.647 0c-7.236 3.682-8.824 7.189-10.766 10.345-3.883 7.19-3.53 16.307.177 19.814Z"/></symbol>
+     <symbol viewBox="-2 -2 30 31" id="icon-star" xmlns="http://www.w3.org/2000/svg"><path d="M5.87 25.68c-.628.323-1.34-.241-1.213-.962l1.349-7.686-5.724-5.454c-.535-.51-.258-1.442.458-1.544l7.96-1.13 3.55-7.031a.834.834 0 0 1 1.505 0l3.55 7.03 7.96 1.131c.716.102.993 1.034.458 1.544l-5.724 5.454 1.349 7.686c.126.72-.585 1.285-1.213.962l-7.133-3.666L5.87 25.68Z"/></symbol>
+     <symbol viewBox="0 0 24 24" id="icon-tiktok" xmlns="http://www.w3.org/2000/svg"><path d="M17.073 0h-4.045v16.348c0 1.948-1.556 3.548-3.492 3.548s-3.491-1.6-3.491-3.548c0-1.913 1.52-3.478 3.388-3.548V8.696C5.319 8.766 2 12.139 2 16.348 2 20.59 5.388 24 9.571 24s7.57-3.444 7.57-7.652V7.965a9.366 9.366 0 0 0 5.36 1.809V5.67c-3.043-.105-5.428-2.61-5.428-5.67Z"/></symbol>
+     <symbol viewBox="0 0 24 24" id="icon-twitter" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ka)"><path d="M7.55 21.75c9.055 0 14.008-7.503 14.008-14.008 0-.211-.004-.427-.014-.638A10 10 0 0 0 24 4.555c-.898.4-1.85.66-2.826.774a4.95 4.95 0 0 0 2.165-2.723A9.897 9.897 0 0 1 20.213 3.8a4.93 4.93 0 0 0-8.394 4.49A13.985 13.985 0 0 1 1.673 3.15a4.93 4.93 0 0 0 1.523 6.57 4.93 4.93 0 0 1-2.23-.614v.06a4.922 4.922 0 0 0 3.95 4.829 4.895 4.895 0 0 1-2.221.084 4.934 4.934 0 0 0 4.597 3.422A9.875 9.875 0 0 1 0 19.538a13.969 13.969 0 0 0 7.55 2.212Z"/></g><defs><clipPath id="ka"><path d="M0 0h24v24H0z"/></clipPath></defs></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+        <header>
+            <h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+            <p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+                <li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+-->
+
+            <h3>A) Inline SVG with embedded sprite</h3>
+            <ul>
+
+             <li title="icon-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-icon-arrow-dims">
+                            <use xlink:href="#icon-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>icon-arrow, </h2>
+                </li>
+             <li title="icon-clock">
+                    <div class="icon-box">
+                        <svg class="svg-icon-clock-dims">
+                            <use xlink:href="#icon-clock"/>
+                        </svg>
+                    </div>
+                    <h2>icon-clock, </h2>
+                </li>
+             <li title="icon-close">
+                    <div class="icon-box">
+                        <svg class="svg-icon-close-dims">
+                            <use xlink:href="#icon-close"/>
+                        </svg>
+                    </div>
+                    <h2>icon-close, </h2>
+                </li>
+             <li title="icon-instagram">
+                    <div class="icon-box">
+                        <svg class="svg-icon-instagram-dims">
+                            <use xlink:href="#icon-instagram"/>
+                        </svg>
+                    </div>
+                    <h2>icon-instagram, </h2>
+                </li>
+             <li title="icon-medium">
+                    <div class="icon-box">
+                        <svg class="svg-icon-medium-dims">
+                            <use xlink:href="#icon-medium"/>
+                        </svg>
+                    </div>
+                    <h2>icon-medium, </h2>
+                </li>
+             <li title="icon-pin">
+                    <div class="icon-box">
+                        <svg class="svg-icon-pin-dims">
+                            <use xlink:href="#icon-pin"/>
+                        </svg>
+                    </div>
+                    <h2>icon-pin, </h2>
+                </li>
+             <li title="icon-play">
+                    <div class="icon-box">
+                        <svg class="svg-icon-play-dims">
+                            <use xlink:href="#icon-play"/>
+                        </svg>
+                    </div>
+                    <h2>icon-play, </h2>
+                </li>
+             <li title="icon-quote">
+                    <div class="icon-box">
+                        <svg class="svg-icon-quote-dims">
+                            <use xlink:href="#icon-quote"/>
+                        </svg>
+                    </div>
+                    <h2>icon-quote, </h2>
+                </li>
+             <li title="icon-star">
+                    <div class="icon-box">
+                        <svg class="svg-icon-star-dims">
+                            <use xlink:href="#icon-star"/>
+                        </svg>
+                    </div>
+                    <h2>icon-star, </h2>
+                </li>
+             <li title="icon-tiktok">
+                    <div class="icon-box">
+                        <svg class="svg-icon-tiktok-dims">
+                            <use xlink:href="#icon-tiktok"/>
+                        </svg>
+                    </div>
+                    <h2>icon-tiktok, </h2>
+                </li>
+             <li title="icon-twitter">
+                    <div class="icon-box">
+                        <svg class="svg-icon-twitter-dims">
+                            <use xlink:href="#icon-twitter"/>
+                        </svg>
+                    </div>
+                    <h2>icon-twitter, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <section>
+
+<!--
+B) Inline SVG with external sprite
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS.
+-->
+
+            <h3>B) Inline SVG with external sprite</h3>
+            <ul>
+
+             <li title="icon-arrow">
+                    <div class="icon-box">
+                        <svg class="svg-icon-arrow-dims">
+                            <use xlink:href="symbol-defs.svg#icon-arrow"/>
+                        </svg>
+                    </div>
+                    <h2>icon-arrow</h2>
+                </li>
+             <li title="icon-clock">
+                    <div class="icon-box">
+                        <svg class="svg-icon-clock-dims">
+                            <use xlink:href="symbol-defs.svg#icon-clock"/>
+                        </svg>
+                    </div>
+                    <h2>icon-clock</h2>
+                </li>
+             <li title="icon-close">
+                    <div class="icon-box">
+                        <svg class="svg-icon-close-dims">
+                            <use xlink:href="symbol-defs.svg#icon-close"/>
+                        </svg>
+                    </div>
+                    <h2>icon-close</h2>
+                </li>
+             <li title="icon-instagram">
+                    <div class="icon-box">
+                        <svg class="svg-icon-instagram-dims">
+                            <use xlink:href="symbol-defs.svg#icon-instagram"/>
+                        </svg>
+                    </div>
+                    <h2>icon-instagram</h2>
+                </li>
+             <li title="icon-medium">
+                    <div class="icon-box">
+                        <svg class="svg-icon-medium-dims">
+                            <use xlink:href="symbol-defs.svg#icon-medium"/>
+                        </svg>
+                    </div>
+                    <h2>icon-medium</h2>
+                </li>
+             <li title="icon-pin">
+                    <div class="icon-box">
+                        <svg class="svg-icon-pin-dims">
+                            <use xlink:href="symbol-defs.svg#icon-pin"/>
+                        </svg>
+                    </div>
+                    <h2>icon-pin</h2>
+                </li>
+             <li title="icon-play">
+                    <div class="icon-box">
+                        <svg class="svg-icon-play-dims">
+                            <use xlink:href="symbol-defs.svg#icon-play"/>
+                        </svg>
+                    </div>
+                    <h2>icon-play</h2>
+                </li>
+             <li title="icon-quote">
+                    <div class="icon-box">
+                        <svg class="svg-icon-quote-dims">
+                            <use xlink:href="symbol-defs.svg#icon-quote"/>
+                        </svg>
+                    </div>
+                    <h2>icon-quote</h2>
+                </li>
+             <li title="icon-star">
+                    <div class="icon-box">
+                        <svg class="svg-icon-star-dims">
+                            <use xlink:href="symbol-defs.svg#icon-star"/>
+                        </svg>
+                    </div>
+                    <h2>icon-star</h2>
+                </li>
+             <li title="icon-tiktok">
+                    <div class="icon-box">
+                        <svg class="svg-icon-tiktok-dims">
+                            <use xlink:href="symbol-defs.svg#icon-tiktok"/>
+                        </svg>
+                    </div>
+                    <h2>icon-tiktok</h2>
+                </li>
+             <li title="icon-twitter">
+                    <div class="icon-box">
+                        <svg class="svg-icon-twitter-dims">
+                            <use xlink:href="symbol-defs.svg#icon-twitter"/>
+                        </svg>
+                    </div>
+                    <h2>icon-twitter</h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Sat, 09 Mar 2024 15:33:38 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>
